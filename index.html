@@ -14,8 +14,8 @@ body {
 
 /* HEADER */
 .header {
-  height: 85vh;
-  background: url("https://images.unsplash.com/photo-1627308595229-7830a5c91f9f") center/cover no-repeat;
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,26 +23,29 @@ body {
 
 .overlay {
   background: rgba(0,0,0,0.6);
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
-  text-align: center;
   color: white;
+  text-align: left;
+  max-width: 300px;
 }
 
 .overlay h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .overlay p {
   margin: 10px 0;
+  font-size: 14px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 14px 25px;
-  background: #ff8800;
+  background: linear-gradient(45deg, #ff8800, #ff6600);
   color: white;
   text-decoration: none;
   border-radius: 30px;
@@ -75,14 +78,20 @@ body {
   gap: 15px;
 }
 
-.gallery img {
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.before-after img {
   width: 100%;
   border-radius: 10px;
 }
 
 /* CONTACT */
 .contact {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
               url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover;
   color: white;
   text-align: center;
@@ -93,7 +102,7 @@ body {
   display: inline-block;
   margin-top: 15px;
   padding: 15px 25px;
-  background: #ff8800;
+  background: linear-gradient(45deg, #ff8800, #ff6600);
   color: white;
   text-decoration: none;
   border-radius: 30px;
@@ -128,9 +137,19 @@ body {
 <!-- AVANT / APRES -->
 <div class="section">
   <h2>Avant / Après</h2>
+
   <div class="gallery">
-    <img src="https://i.imgur.com/7b1YQ9F.jpg">
-    <img src="https://i.imgur.com/T6XKZ9b.jpg">
+
+    <div class="before-after">
+      <img src="https://i.imgur.com/7b1YQ9F.jpg">
+      <img src="https://i.imgur.com/T6XKZ9b.jpg">
+    </div>
+
+    <div class="before-after">
+      <img src="https://i.imgur.com/7b1YQ9F.jpg">
+      <img src="https://i.imgur.com/T6XKZ9b.jpg">
+    </div>
+
   </div>
 </div>
 
