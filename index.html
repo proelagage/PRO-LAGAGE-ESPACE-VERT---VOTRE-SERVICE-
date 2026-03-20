@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Élagage Gironde - Devis Gratuit</title>
+<title>Pro Élagage Espace Vert</title>
 
 <style>
 body {
@@ -12,6 +12,7 @@ body {
   background: #f4f4f4;
 }
 
+/* HEADER */
 header {
   background: #2e7d32;
   color: white;
@@ -20,13 +21,19 @@ header {
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 28px;
 }
 
+header p {
+  font-size: 16px;
+}
+
+/* SECTIONS */
 section {
-  padding: 20px;
+  padding: 25px;
 }
 
+/* SERVICES */
 .services {
   display: grid;
   gap: 15px;
@@ -36,20 +43,34 @@ section {
   background: white;
   padding: 15px;
   border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
+/* AVANT APRES */
+.before-after {
+  text-align: center;
+}
+
+.before-after img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
 .contact {
   background: #2e7d32;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 button {
   background: #ff9800;
   border: none;
   padding: 15px;
-  margin: 10px;
+  margin-top: 10px;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -60,32 +81,34 @@ button {
 <body>
 
 <header>
-<h1>PRO ÉLAGAGE ESPACE VERT</h1>
-<p>Devis Gratuit - Intervention Rapide</p>
+  <h1>PRO ÉLAGAGE ESPACE VERT</h1>
+  <p>Devis Gratuit - Intervention Rapide</p>
 </header>
 
 <section>
-<h2>Nos services</h2>
-<div class="services">
-<div class="card">Élagage & abattage</div>
-<div class="card">Taille de haies</div>
-<div class="card">Entretien de jardin</div>
-<div class="card">Débroussaillage</div>
-</div>
-</section>
-<section style="padding: 30px; background: #f5f5f5;">
-  <h2 style="text-align:center;">Avant / Après</h2>
-
-  <div style="max-width:500px; margin:auto;">
-    <img src="avant-apres.jpg" style="width:100%; border-radius:10px;">
+  <h2>Nos services</h2>
+  <div class="services">
+    <div class="card">Élagage & abattage</div>
+    <div class="card">Taille de haies</div>
+    <div class="card">Entretien de jardin</div>
+    <div class="card">Débroussaillage</div>
   </div>
 </section>
+
+<section class="before-after">
+  <h2>Avant / Après</h2>
+  <div style="max-width:500px; margin:auto;">
+  <img src="avant-apres.jpg" style="width:100%; border-radius:10px;">
+  </div>
+</section>
+
 <section class="contact">
-<h2>Contact</h2>
-<p>📞 06 12 39 55 86</p>
-<button onclick="window.location.href='tel:0612395586'">Appeler</button>
+  <h2>Contact</h2>
+  <p>06 12 39 55 86</p>
+  <button onclick="window.location.href='tel:0612395586'">
+    Appeler maintenant
+  </button>
 </section>
 
 </body>
 </html>
-  
